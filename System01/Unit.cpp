@@ -26,9 +26,9 @@ void AUnit::BeginPlay()
 	newLocat.Z = UtilsLib::NormalDistGen(MaxLocation/2,MaxLocation/2)+500.0;
 	this->SetActorLocation(newLocat);	
 	FVector currentScale ;	
-	massBody = UtilsLib::NormalDistGen(1.0f,0.5f);
+	massBody = UtilsLib::NormalDistGen(1.0f,1.0f);
 	currentScale =this->GetActorScale3D();
-	this->SetActorScale3D(currentScale * massBody * 0.06 );
+	this->SetActorScale3D(currentScale * massBody * 0.10 );
 	velocity = FVector(0.0f,0.0f,0.0f);
 	acceleration = FVector(0.0f,0.0f,0.0f);
 	/* FString Msg;

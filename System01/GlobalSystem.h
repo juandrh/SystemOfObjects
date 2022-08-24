@@ -28,6 +28,6 @@ public:
 
 private:
 
-	int Num_Units = 1000;
+	int Num_Units = 700;
 
 };

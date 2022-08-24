@@ -33,7 +33,7 @@ private:
 	UMaterialInstanceDynamic* DynMaterial;
 
 	UPROPERTY(EditAnywhere, Category = "Propiedades")
-	float MaxLocation = 1500;
+	float MaxLocation = 2000;
 
 protected:
 	// Called when the game starts or when spawned
