@@ -2,7 +2,7 @@
 ## System Of Objects: Movement Simulation of Solar System (Unreal Engine with C++)
 
 No satellites added.
-The sun is stationary in this simulation. The velocity of planets are realtive to it.
+The sun is stationary in this simulation. The velocity of planets are relative to it.
 The scale of positions and sizes of bodies have being changed for better representation in the screen.
 
 Real data of mass, radius, position and velocity from: https://ssd.jpl.nasa.gov/horizons/
