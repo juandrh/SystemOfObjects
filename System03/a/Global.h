@@ -31,6 +31,6 @@ public:
 
 private:
 
-	int Num_Agents = 150;
+	int Num_Agents = 20;
 
 };

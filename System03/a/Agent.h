@@ -23,7 +23,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Propiedades")
 	FVector Velocity;
 	UPROPERTY(EditAnywhere, Category = "Propiedades")
-	FVector MaxVelocity = FVector(4.5f,4.5f,0.0f); 
+	FVector MaxVelocity = FVector(1.0f,1.0f,0.0f); 
 	UPROPERTY(EditAnywhere, Category = "Propiedades")
 	FVector Acceleration = FVector(0.0f,0.0f,0.0f); 	
 	UPROPERTY(EditAnywhere, Category = "Propiedades")
@@ -33,8 +33,8 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Propiedades")
 	UMaterialInstanceDynamic* DynMaterial;
 	float Pi = 3.1415926535897932384626433832795; 
-
-
+	float Speed = 10.0;
+	float angle=0.0f;
 
 protected:
 	// Called when the game starts or when spawned

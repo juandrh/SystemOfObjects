@@ -17,8 +17,6 @@ AAgent::AAgent()
 	AgentMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Agent Mesh"));
 	RootComponent = AgentMesh;
 
-	
-
 }
 
 // Called when the game starts or when spawned
@@ -27,10 +25,15 @@ void AAgent::BeginPlay()
 	Super::BeginPlay();
 	TArray<USceneComponent*> MeshChildren;
 	AgentMesh->GetChildrenComponents(false,MeshChildren);	
-	AgMass = AgMass + FMath::FRand() * 50;
-	MaxVelocity += MaxVelocity* (FMath::FRand() * 3);
+	AgMass = AgMass + FMath::FRand() * 50.0f;
+	MaxVelocity = (MaxVelocity * Speed *(FMath::FRand() ) / 2 )+ FVector(Speed/2.0f,Speed/2.0f,0.0f);
 	//float scale = FMath::FRand()*1.2+0.3;
 	//this->SetActorScale3D(FVector(scale,scale,scale));
+
+	TArray<USceneComponent*> MeshChildrens;
+	AgentMesh->GetChildrenComponents(false,MeshChildrens);
+	angle = (float)MeshChildren[0]->GetComponentRotation().Roll;
+
 }
 
 // Called every frame
@@ -46,23 +49,27 @@ void AAgent::Update()
 	this->SetAgLocation();	
 	this->RotateBody();
 	
-	
 	Acceleration *=0 ;
 }
 
 void AAgent::RotateBody()
 {
-TArray<USceneComponent*> MeshChildren;
+	TArray<USceneComponent*> MeshChildren;
 	AgentMesh->GetChildrenComponents(false,MeshChildren);
 	FRotator MeshRotator;
 
+	FVector path =Velocity * FVector(1.0f,1.0f,0.0f);
+	
+	
+	//UE_LOG(LogTemp, Warning,TEXT("a->   %f : %f : %f"),(float)MeshChildren[0]->GetComponentRotation().Roll,angle );
 
-	// MeshChildren:   0 -> Body 
+	angle += path.Size(); 
+	
 	MeshRotator = 	FRotator (
 		Velocity.Rotation().Pitch,
 		Velocity.Rotation().Yaw-65.0f,
-		MeshChildren[0]->GetComponentRotation().Roll- (Velocity.Size() * 180.0f / Pi) );
-	
+		angle);
+			
 	MeshChildren[0]->SetWorldRotation(
 		FMath::RInterpTo(
 			MeshChildren[0]->GetComponentRotation(),
@@ -135,22 +142,16 @@ void AAgent::ChangeAgColor(FVector color)
  void AAgent::Seek(FVector target) {
     FVector desired = target -  this->GetActorLocation();
 
-	if  (desired.Size()<200){
+	if  (desired.Size()<200.0f){
 		float dist = desired.Size();
 		desired.Normalize();		
-    	desired *= MaxVelocity*(dist/200);
+    	desired *= MaxVelocity*(dist/200.0f);
 		} else {
 		desired.Normalize();		
     	desired *= MaxVelocity;
-		}
+	}
 
-
-    
-
-    FVector Steer = desired - Velocity;
-	
-	UE_LOG(LogTemp, Warning,TEXT("f->   %f : %f : %f"), Steer.X,Steer.Y,Steer.Z);
-     
+    FVector Steer = desired - Velocity;	     
     this->ApplyForce(Steer);
   }
 
