@@ -12,7 +12,7 @@ En este parte del proyecto son capaces de percibir una luz verde que el usuario 
 
 View an example: https://www.youtube.com/watch?v=kFvQfbU2eO0
 
-Source  code and assets in: https://github.com/juandrh/SystemOfObjects/tree/main/System03/a
+
 
 Main sources:
 Unreal Engine Documentation: https://docs.unrealengine.com/5.0/en-US/
