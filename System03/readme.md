@@ -5,5 +5,4 @@ Autonomous agents are small agents that are in a 3D environment, they have sense
 
 
 (ES)Agentes Autónomos
-
 Agentes autónomos son pequeños agentes que se encuentran en un entorno 3D, tienen sentidos para observar el entorno y una pequeña inteligencia para actuar según lo percibido.
