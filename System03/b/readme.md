@@ -14,7 +14,7 @@ Agentes autónomos son pequeños agentes que se encuentran en un entorno 3D, tie
 
 En este parte del proyecto:
 
-- ellos son capaces de percibir una luz verde que el usuario coloca donde quiere. Los agentes sentiran el impulso de acercarse a la misma.
+- ellos son capaces de percibir una luz verde que el usuario coloca donde quiere. Los agentes sentirán el impulso de acercarse a la misma.
 
 - Hay un campo de fuerza en el escenario que afecta a todos los agentes impulsándoles a moverse en el sentido que dicte el mismo.
 
