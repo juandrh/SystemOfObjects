@@ -23,6 +23,7 @@ En este parte del proyecto:
 - Se ha perfeccionado el movimiento de rotación del cuerpo del agente.
 
 
+View an example:https://www.youtube.com/watch?v=5te2q5UMLDk
 
 Source  code and assets in: https://github.com/juandrh/SystemOfObjects/tree/main/System03/b
 
