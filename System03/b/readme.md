@@ -1,4 +1,4 @@
-(EN)*Autonomous Agents, force field, Perlin Noise (Unreal Engine, C++)
+(EN)Autonomous Agents, force field, Perlin Noise (Unreal Engine, C++)
 Autonomous agents are small agents that are in a 3D environment, they have senses to observe the environment and a small intelligence to act according to what is perceived.
 
 In this part of the project:
