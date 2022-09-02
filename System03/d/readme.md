@@ -22,7 +22,7 @@ Características:
 - Comportamiento de bandada o rebaño: moverse alineados, separados y cohesionados.
 - Se agregó un movimiento aleatorio a cada agente distorsionado con Perlin Noise.
 - Se ha mejorado el movimiento de rotación del cuerpo del agente.
-- Se agregó un panel de control para cambiar los parámetros. Permite cam biar la intesidad de las fuerzas y distancias de cada una.
+- Se agregó un panel de control para cambiar los parámetros. Permite cambiar la intesidad de las fuerzas y distancias de cada una.
 
 
 View example: https://www.youtube.com/watch?v=VsnRW40ib8s
