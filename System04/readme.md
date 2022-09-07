@@ -1,4 +1,6 @@
+
 (EN)  Cellular automata: Game of life 
+
 They are the maximum simplification of autonomous agents. They evolve over time based on their current status and the state of their closest neighbors. It was discovered by Stanislaw Ulam and John von Neumann and, later, studied by Wolfram.
 Cellular automata are applied in many fields such as Chemistry, Biology, Physics, Art and generative music.
 
@@ -11,6 +13,7 @@ I have added controls to alter the above limits.
 
 ----------------------------------------------------------------------
 (ES)Autómatas celulares: Juego de la vida
+
 Son la simplificación máxima de los agentes autonómos. Evolucionan en el tiempo en base a su estado actual y el de sus vecinos más próximos. Fue descubierto por  Stanislaw Ulam and John von Neumann y , posteriormente, estudiado por Wolfram.
 Los automata celulares se aplican en muchos ámbitos como la Química, Biología, Física, Arte y música generativa.
 
