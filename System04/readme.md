@@ -15,7 +15,7 @@ I have added controls to alter the above limits.
 (ES)Autómatas celulares: Juego de la vida
 
 Son la simplificación máxima de los agentes autonómos. Evolucionan en el tiempo en base a su estado actual y el de sus vecinos más próximos. Fue descubierto por  Stanislaw Ulam and John von Neumann y , posteriormente, estudiado por Wolfram.
-Los automata celulares se aplican en muchos ámbitos como la Química, Biología, Física, Arte y música generativa.
+Los automatas celulares se aplican en muchos ámbitos como la Química, Biología, Física, Arte y música generativa.
 
 En este caso, he reproducido el Juego de la Vida de John Horton Conway, que implementa un automata celular en 2D con 3 reglas muy simples:
 - Una célula con menos de dos vecinos muere de soledad
